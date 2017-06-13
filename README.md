@@ -78,5 +78,6 @@ class Triangle : Shape
 }
 ```
 
- * Encapsulation - kapsullama,gizleme demekdir. Bir sinfin daxilinde olan obyektin xususiyyetini almaga icaze vermeyen bir gizleme novudur. `public` - aciqdir, kodun her hansi bir yerinde istifade edile biler. `private` - gizlidir, yalnizca hemin class daxilinde isledile biler.`protected` - gizlidir, sinif ve ya toreme sinifde istifade edile biler. `internal` - bir tertib daxilinde kodlarda istifade edile biler.
- * Inheritance - Miras vermek, varislik bir classin davranislarini goturub, genislendirib ve deyisdirerek yeni bir classin yaradilmasidir. Esas class (valideyn) alan ise toreme class (ovlad) adlanir.Toreme class yalniz bir valideyne sahib ola biler.
+   * Encapsulation - kapsullama,gizleme demekdir. Bir sinfin daxilinde olan obyektin xususiyyetini almaga icaze vermeyen bir gizleme novudur. `public` - aciqdir, kodun her hansi bir yerinde istifade edile biler. `private` - gizlidir, yalnizca hemin class daxilinde isledile biler.`protected` - gizlidir, sinif ve ya toreme sinifde istifade edile biler. `internal` - bir tertib daxilinde kodlarda istifade edile biler.
+   * Inheritance - Miras vermek, varislik bir classin davranislarini goturub, genislendirib ve deyisdirerek yeni bir classin yaradilmasidir. Esas class (valideyn) alan ise toreme class (ovlad) adlanir.Toreme class yalniz bir valideyne sahib ola biler.
+4. Class obyektlerin xususiyyetlerini ozunde birlesdirir.
