@@ -1,4 +1,4 @@
-# Object Oriented ve diger paradigmalar
+# Object-oriented ve diger paradigmalar
 1. Emrlerin icra edilmesi novune gore asagindaki proqramlasdirma paradigmalari var:
     * imperative paradigma:
        * bu paradigmada emrler yeni emeliyyatlar ardicilliqla yerine yetirilir. Xaricden tesir edile biler.
@@ -23,14 +23,65 @@ public class Person
     //Other properties, methods, events...
 }
 ```
-Bu kodda ilk once `Nazrin` ucun `name` deyiseni, yaddasi ayrilir, sonra ise yeniden `name` deyisenine `Gunel` menimsedilir.
 
 ```
 var name=Nazrin;
 var name=Gunel;
 ```
+Bu kodda ilk once `Nazrin` ucun `name` deyiseni, yaddasi ayrilir, sonra ise yeniden `name` deyisenine `Gunel` menimsedilir.
+
 3. OOP-nin 4 esas konsepti var:
-    * Abstraction - 
-    * Polymorphism - 
-    * Encapsulation - 
-    * Inheritance - 
+    * Abstraction - proqramci qarisiqliq yaranmasin deye obyektin xususiyyetlerini gizledir, yalniz hemin classin icerisinde hemin xususiyyetler kecerlidir.
+    * Polymorphism - bir deyisenin, bir funksiyanin, bir classin muxtelif mena ve ya meqsedler ucun istifade edilmesi. Numune:
+```
+public class Shape
+{
+    // A few example members
+    public int X { get; private set; }
+    public int Y { get; private set; }
+    public int Height { get; set; }
+    public int Width { get; set; }
+   
+    // Virtual method
+    public virtual void Draw()
+    {
+        Console.WriteLine("Performing base class drawing tasks");
+    }
+}
+
+class Circle : Shape
+{
+    public override void Draw()
+    {
+        // Code to draw a circle...
+        Console.WriteLine("Drawing a circle");
+        base.Draw();
+    }
+}
+class Rectangle : Shape
+{
+    public override void Draw()
+    {
+        // Code to draw a rectangle...
+        Console.WriteLine("Drawing a rectangle");
+        base.Draw();
+    }
+}
+class Triangle : Shape
+{
+    public override void Draw()
+    {
+        // Code to draw a triangle...
+        Console.WriteLine("Drawing a triangle");
+        base.Draw();
+    }
+}
+```
+    * Encapsulation - kapsullama,gizleme demekdir. Bir sinfin daxilinde olan obyektin xususiyyetini almaga icaze vermeyen bir gizleme novudur.
+    
+        `public` - aciqdir, kodun her hansi bir yerinde istifade edile biler;
+        `private` - gizlidir, yalnizca hemin class daxilinde isledile biler;
+        `protected` - gizlidir, sinif ve ya toreme sinifde istifade edile biler;
+        `internal` - bir tertib daxilinde kodlarda istifade edile biler.
+        
+    * Inheritance - Miras vermek, varislik bir classin davranislarini goturub, genislendirib ve deyisdirerek yeni bir classin yaradilmasidir. Esas class (valideyn) alan ise toreme class (ovlad) adlanir.Toreme class yalniz bir valideyne sahib ola biler.
