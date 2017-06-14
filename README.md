@@ -3,13 +3,13 @@
     * imperative paradigma:
        * bu paradigmada emrler yeni emeliyyatlar ardicilliqla yerine yetirilir. Xaricden tesir edile biler.
     * functional paradigma:
-       * xarici tesirleri olur
+       * xarici tesirleri olmur
     * declarative paradigma:
        * emeliyyatin nece yerine yetirilidiyi vacib olmur, esas emeliyyatin yerine yetirilmesidir
     * object-oriented paradigma:
        * her seye bir obyekt kimi baxilir ve bu obyektlerin ozlerine xas xususiyyetleri olur. Obyektler bir sinif altinda birlesir. Object-oriented paradigmasinda bir classda olan deyisiklikler diger classlara, obyektlere tesir gostermir, yalniz o class daxilinde kecerlidir.
 Bu xususiyyetlerine gore men object-oriented paradigmasini ozume yaxin gorurem, cunki burda bir-birinden asili olmayan hisselerle islemek mumkundur.
-2. OOP paradigmasinda obyektler bir-birinden asili olmayan classlarla isleyir. Obyektlerin ozlerine mexsus olan xususiyyetleri bir classda saxlanilir ve obyekt daxil ederken bu classdan istifade edilir. OOP bize imkan yaradir ki, bir obyektlerde her hansi bir emeliyyat deyisdirende ve ya elave edende class vasitesile hemin classa aid olan butun obyetlerde bu emeliyyat icra edilsin. Bu diger classlara tesir gostermeyecekdir. OPP vasitesile hem de biz ferqli classlarda eyni adla deyisen goture bilerik. Bu deyisenler bir-birine qarismir, cunki hemin classdan xaricde islemir. Diger paradigmalarda ise bu mumkun deyil. Meselen:
+2. OOP paradigmasinda obyektler bir-birinden asili olmayan classlarla isleyir. Obyektlerin ozlerine mexsus olan xususiyyetleri bir classda saxlanilir ve obyekt daxil ederken bu classdan istifade edilir. OOP bize imkan yaradir ki, bir obyektlerde her hansi bir emeliyyat deyisdirende ve ya elave edende class vasitesile hemin classa aid olan butun obyektlerde bu emeliyyat icra edilsin. Bu diger classlara tesir gostermeyecekdir. OOP vasitesile hem de biz ferqli classlarda eyni adla deyisen goture bilerik. Bu deyisenler bir-birine qarismir, cunki hemin classdan xaricde islemir. Diger paradigmalarda ise bu mumkun deyil. Meselen:
 ```
 public class Person
 {
@@ -80,4 +80,4 @@ class Triangle : Shape
 
    * Encapsulation - kapsullama,gizleme demekdir. Bir sinfin daxilinde olan obyektin xususiyyetini almaga icaze vermeyen bir gizleme novudur. `public` - aciqdir, kodun her hansi bir yerinde istifade edile biler. `private` - gizlidir, yalnizca hemin class daxilinde isledile biler.`protected` - gizlidir, sinif ve ya toreme sinifde istifade edile biler. `internal` - bir tertib daxilinde kodlarda istifade edile biler.
    * Inheritance - Miras vermek, varislik bir classin davranislarini goturub, genislendirib ve deyisdirerek yeni bir classin yaradilmasidir. Esas class (valideyn) alan ise toreme class (ovlad) adlanir.Toreme class yalniz bir valideyne sahib ola biler.
-4. Class obyektlerin xususiyyetlerini ozunde birlesdirir.
+4. Class obyektlerin xususiyyetlerini ozunde birlesdirir. Class yaddas tutmur, amma obyekt yaddasda bir yer tutur. Class bir forma, bir certyojdur, obyekt ise bu formaya uygun yarasilmis bir esyadir.
